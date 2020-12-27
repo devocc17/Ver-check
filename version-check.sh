@@ -1,5 +1,6 @@
 #!/bin/bash
-# simple script to list version numbers of development toolsexport LC_ALL=C
+# simple script to list version numbers of development tools
+export LC_ALL=C
 bash --version | head -n1 | cut -d" " -f2-4
 MYSH=$(readlink -f /bin/sh)
 echo "/bin/sh -> $MYSH"
